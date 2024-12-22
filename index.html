@@ -78,6 +78,7 @@
     const openPopup = document.getElementById('openPopup');
     const closePopup = document.getElementById('closePopup');
     const popup = document.getElementById('popup');
+    const form = document.getElementById('popupForm');
 
     openPopup.addEventListener('click', () => {
       popup.classList.remove('hidden');
@@ -98,16 +99,31 @@
       });
     });
 
-    document.getElementById('popupForm').addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const name = document.getElementById('name').value;
-      const surname = document.getElementById('surname').value;
-      const phone = document.getElementById('phone').value;
+      
+      try {
+        const formData = new FormData(form);
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
 
-      const mailto = `mailto:korkmaz.x7@gmail.com?subject=Form Submission&body=Name: ${name}%0A` +
-                     `Surname: ${surname}%0APhone: ${phone}`;
-
-      window.location.href = mailto;
+        if (response.ok) {
+          alert('Form submitted successfully!');
+          form.reset();
+          // Form başarıyla gönderildikten sonra popup'ı kapat
+          closePopup.click();
+        } else {
+          throw new Error('Form submission failed');
+        }
+      } catch (error) {
+        alert('There was an error submitting the form. Please try again.');
+        console.error('Error:', error);
+      }
     });
   </script>
 </body>
