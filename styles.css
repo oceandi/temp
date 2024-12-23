@@ -1,0 +1,124 @@
+.canvas{
+    width: 100%;
+    height: 670px;
+    background-image: url(x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    height: 44px;
+    width: 100%;
+    background-color: #0000004a;
+    position: relative;
+    z-index: 10;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+}
+
+.dashboard {
+    width: 233px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.338);
+    z-index: 9;
+}
+
+.packs {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.detail {
+    display: flex;
+    flex-direction: row;
+    height: 62px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.242);
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.detail-options {
+    width: auto;
+    height: 26px;
+    margin: 4px;
+    border: 0px;
+    border-radius: 3px;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.772);
+    font-size: 13px;
+}
+
+.detail-options:active {
+    background-color:#007bff;
+    color: white;
+}
+
+.apply {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 13px 30px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.info {
+    height: 225px;
+    width: 185px;
+    margin: 0px 20px 17px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-image {
+    height: 185px;
+    width: 185px;
+    background-color: #ff000088;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+}
+
+.info-image p{
+    margin: 0px;
+    font-size: 12px;
+}
+
+.info-image h1 {
+    margin: 10px 0px 0px 0px;
+    align-items: center;
+    font-size: 75px;
+}
+
+.info-image h3 {
+    margin: 10px 0px 0px 0px;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 40px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.info-text p{
+    margin: 0px;
+    font-size: 12px;
+}
