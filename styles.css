@@ -1,7 +1,7 @@
 .canvas{
     width: 100%;
     height: 670px;
-    background-image: url(x.png);
+    background-color: azure;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -22,12 +22,12 @@
     width: 100%;
     height: 100%;
     flex-direction: row;
+    background-image: linear-gradient(#2cd1ff50, #6a94ff76);
 }
 
 .dashboard {
     width: 233px;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.338);
     z-index: 9;
 }
 
@@ -43,9 +43,11 @@
     flex-direction: row;
     height: 62px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.242);
     justify-content: center;
     align-items: flex-end;
+    border-color: #00000080;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
 }
 
 .detail-options {
@@ -72,6 +74,9 @@
     padding: 13px 30px;
     flex-wrap: wrap;
     align-content: flex-start;
+    border-style: solid;
+    border-width: 0px 0px 0px 1px;
+    border-color: #00000080;
 }
 
 .info {
@@ -85,12 +90,14 @@
 .info-image {
     height: 185px;
     width: 185px;
-    background-color: #ff000088;
+    background-image: linear-gradient(#007bff85, #007bffc9);
     color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     line-height: 1;
+    cursor: pointer;
+    border-radius: 8px 8px 0px 0px;
 }
 
 .info-image p{
@@ -110,15 +117,180 @@
 
 .info-text {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
     height: 40px;
     width: 100%;
     background-color: #ffffff;
+    border-radius: 0px 0px 8px 8px;
 }
 
 .info-text p{
-    margin: 0px;
+    margin: 4px;
     font-size: 12px;
+}
+
+.circle-button {
+    width: 19px; /* Adjust size */
+    height: 19px; /* Adjust size */
+    background-color: #0080ffbd;
+    border-radius: 50%; /* Makes it circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    cursor: pointer;
+    margin: 0px 3px 7px 0px;
+}
+  
+.circle-button span {
+    font-size: 16px; /* Adjust size for the '+' */
+    color: white;
+    font-family: Arial, sans-serif; /* Font style */
+    font-weight: 400; /* Optional for bold '+' */
+}
+
+.dashboard ul{
+    list-style: none;
+    padding: 10px;
+}
+
+.dashboard li {
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 2px 0px 2px 0px;
+    border-radius: 4px;
+}
+
+.dashboard li:hover {
+    background-color: #007bff94;
+    border-radius: 4px;
+    cursor: default;
+}
+
+.setting-icons {
+    margin-right: 5px;
+    height: 20px;
+    border-radius: 6px;
+}
+
+@font-face {
+    font-family: 'SF-Pro';
+    src: url('/fonts/SF-Pro.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "SF-Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+    user-select: none;
+}
+
+.five {
+    block-size: fit-content;
+    inline-size: 100%;
+    background-color: #f5f5f7;
+    display: flex;
+    flex-direction: row;
+}
+
+.endofpage {
+    color: #0000008f;
+    font-size: 12px;
+    margin: 15px 15px 15px 100px;
+}
+
+ul.legal {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    list-style: none;
+}
+
+.legalli{
+    margin: 0px 20px 0px 0px;
+}
+
+.five .endofpage a {
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+    color: inherit; /* Renk değişikliğini önler */
+    background-color: #f5f5f7;
+}
+
+.five .endofpage a:hover,
+.five .endofpage a:focus,
+.five .endofpage a:active {
+    text-decoration: none;
+    color: #06c;
+    background-color: #f5f5f7;
+}
+
+.underline {
+    text-decoration: underline !important;
+    color: #06c !important;
+}
+
+.divider {
+    border-block-start: 1px solid #0000008f;
+    margin: 16px 0;
+    inline-size: 100%;
+}
+
+/* Mac 1200px and 1919px */
+@media screen and (max-width: 1919px) {
+    .desktop {
+        inline-size: 100%;
+    }
+}
+
+/* Macbook 768px and 1199px */
+@media screen and (max-width: 1199px) {
+    .endofpage {
+        margin: 15px 15px 15px 15px;
+    }
+}
+
+/* iPad ve iPhone 768px (e.g., veya daha azı) */
+@media screen and (max-width: 767px) {
+    .long1 {
+        block-size: 500px;
+        padding: 55px;
+    }
+    
+    .long2 {
+        flex-direction: column; /* Change to column layout */
+        block-size: auto; /* Allow the container to grow as needed */
+    }
+
+    .short {
+        inline-size: 100%; /* Take full width */
+        block-size: 500px;
+        border-inline-start-width: 0; /* Remove left border */
+        border-inline-end-width: 0; /* Remove right border */
+    }
+
+    #short-left {
+        border-block-start-width: 6px;
+        border-block-end-width: 6px;
+        border-inline-start-width: 0px;
+        border-inline-end-width: 0px;
+    }
+    
+    #short-right {
+        border-block-start-width: 6px;
+        border-block-end-width: 6px;
+        border-inline-start-width: 0px;
+        border-inline-end-width: 0px;
+    }
+
+    .endofpage {
+        font-size: 10px;
+    }
 }

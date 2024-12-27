@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP ve Detaylı Bilgi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        #ipInfo {
+            margin-top: 20px;
+            text-align: left;
+            display: inline-block;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .map-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .map-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>IP ve Detaylı Bilgi</h1>
+    <div id="ipInfo">Bilgiler yükleniyor...</div>
+
+    <script>
+        async function loadIPInfo() {
+            const apiUrl = 'https://ipinfo.io/json/';
+            try {
+                const response = await fetch(apiUrl);
+                if (!response.ok) {
+                    throw new Error(`HTTP Hatası: ${response.status}`);
+                }
+                const data = await response.json();
+
+                // Harita linki oluştur
+                const mapLink = `https://www.google.com/maps?q=${data.loc}`;
+
+                // Sayfada bilgileri göster
+                document.getElementById('ipInfo').innerHTML = `
+                    <p><strong>IP Adresi:</strong> ${data.ip}</p>
+                    <p><strong>Şehir:</strong> ${data.city}</p>
+                    <p><strong>Bölge:</strong> ${data.region}</p>
+                    <p><strong>Ülke:</strong> ${data.country}</p>
+                    <p><strong>ISP:</strong> ${data.org}</p>
+                    <p><strong>Konum:</strong> ${data.loc} <a href="${mapLink}" target="_blank" class="map-link">Haritada Gör</a></p>
+                `;
+            } catch (error) {
+                document.getElementById('ipInfo').textContent = 'Bilgiler alınamadı. Lütfen tekrar deneyin.';
+                console.error('Hata:', error);
+            }
+        }
+
+        // Sayfa yüklendiğinde fonksiyonu çağır
+        loadIPInfo();
+    </script>
+</body>
+</html>
