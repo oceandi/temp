@@ -13,11 +13,24 @@
         #ipInfo {
             margin-top: 20px;
             text-align: left;
-            display: inline-block;
+            display: none; /* Başlangıçta gizli */
             background-color: #f9f9f9;
             border: 1px solid #ddd;
             padding: 15px;
             border-radius: 8px;
+        }
+        .show-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .show-btn:hover {
+            background-color: #0056b3;
         }
         .map-link {
             display: inline-block;
@@ -36,12 +49,16 @@
 </head>
 <body>
     <h1>IP ve Detaylı Bilgi</h1>
+    <button class="show-btn" onclick="loadIPInfo()">Bilgileri Göster</button>
     <div id="ipInfo">Bilgiler yükleniyor...</div>
 
     <script>
         async function loadIPInfo() {
-            const apiUrl = 'https://ipinfo.io/json/';
+            const apiUrl = 'https://ipapi.co/json/?key=d0ffa73dc18e2df7b4c0066324570070';
+            const ipInfoDiv = document.getElementById('ipInfo');
+            
             try {
+                // API'den veri çek
                 const response = await fetch(apiUrl);
                 if (!response.ok) {
                     throw new Error(`HTTP Hatası: ${response.status}`);
@@ -49,25 +66,24 @@
                 const data = await response.json();
 
                 // Harita linki oluştur
-                const mapLink = `https://www.google.com/maps?q=${data.loc}`;
+                const mapLink = `https://www.google.com/maps?q=${data.latitude},${data.longitude}`;
 
-                // Sayfada bilgileri göster
-                document.getElementById('ipInfo').innerHTML = `
+                // Bilgileri göster
+                ipInfoDiv.innerHTML = `
                     <p><strong>IP Adresi:</strong> ${data.ip}</p>
                     <p><strong>Şehir:</strong> ${data.city}</p>
                     <p><strong>Bölge:</strong> ${data.region}</p>
-                    <p><strong>Ülke:</strong> ${data.country}</p>
+                    <p><strong>Ülke:</strong> ${data.country_name} (${data.country_code})</p>
                     <p><strong>ISP:</strong> ${data.org}</p>
-                    <p><strong>Konum:</strong> ${data.loc} <a href="${mapLink}" target="_blank" class="map-link">Haritada Gör</a></p>
+                    <p><strong>Konum:</strong> ${data.latitude}, ${data.longitude} <a href="${mapLink}" target="_blank" class="map-link">Haritada Gör</a></p>
                 `;
+                ipInfoDiv.style.display = 'block'; // Bilgi alanını göster
             } catch (error) {
-                document.getElementById('ipInfo').textContent = 'Bilgiler alınamadı. Lütfen tekrar deneyin.';
+                ipInfoDiv.textContent = 'Bilgiler alınamadı. Lütfen tekrar deneyin.';
+                ipInfoDiv.style.display = 'block';
                 console.error('Hata:', error);
             }
         }
-
-        // Sayfa yüklendiğinde fonksiyonu çağır
-        loadIPInfo();
     </script>
 </body>
 </html>
