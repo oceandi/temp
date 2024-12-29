@@ -1,22 +1,56 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IP Adresimi Öğren</title>
+    <title>ipapi ile IP Bilgisi</title>
+    <style>
+        /* ... (Your existing CSS) ... */
+        #ip-info table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #ip-info td, #ip-info th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        #ip-info tr:nth-child(even){background-color: #f2f2f2;}
+        #ip-info tr:hover {background-color:
+ #ddd;}
+        #ip-info th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <h1>IP Adresiniz:</h1>
-    <p id="ip">Yükleniyor...</p>
+    <h1>IP Bilgileriniz:</h1>
+    <div id="ip-info">
+        <table>
+            <!-- Data will be inserted here -->
+        </table>
+    </div>
 
     <script>
-        fetch('https://api.ipify.org?format=json')
+        fetch('https://api.ipapi.com/api/check?access_key=d0ffa73dc18e2df7b4c0066324570070')
             .then(response => response.json())
             .then(data => {
-                document.getElementById('ip').textContent = data.ip;
+                const table = document.querySelector('#ip-info table');
+                for (const key in data) {
+                    const row = table.insertRow();
+                    const keyCell = row.insertCell();
+                    const valueCell = row.insertCell();
+                    keyCell.textContent = key;
+                    
+valueCell.textContent = data[key];
+                }
             })
             .catch(error => {
-                document.getElementById('ip').textContent = 'Bilgiler alınamadı.';
+                document.getElementById('ip-info').textContent = 'Bilgiler alınamadı.';
                 console.error('Hata:', error);
             });
     </script>

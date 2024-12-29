@@ -1,6 +1,6 @@
 .canvas{
-    width: 100%;
-    height: 670px;
+    inline-size: 100%;
+    block-size: 670px;
     background-color: azure;
     background-size: cover;
     background-repeat: no-repeat;
@@ -10,8 +10,8 @@
 }
 
 .navbar {
-    height: 44px;
-    width: 100%;
+    block-size: 44px;
+    inline-size: 100%;
     background-color: #0000004a;
     position: relative;
     z-index: 10;
@@ -19,21 +19,21 @@
 
 .content {
     display: flex;
-    width: 100%;
-    height: 100%;
+    inline-size: 100%;
+    block-size: 100%;
     flex-direction: row;
     background-image: linear-gradient(#2cd1ff50, #6a94ff76);
 }
 
 .dashboard {
-    width: 233px;
-    height: 100%;
+    inline-size: 233px;
+    block-size: 100%;
     z-index: 9;
 }
 
 .packs {
-    height: 100%;
-    width: 100%;
+    block-size: 100%;
+    inline-size: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -41,8 +41,8 @@
 .detail {
     display: flex;
     flex-direction: row;
-    height: 62px;
-    width: 100%;
+    block-size: 62px;
+    inline-size: 100%;
     justify-content: center;
     align-items: flex-end;
     border-color: #00000080;
@@ -51,8 +51,8 @@
 }
 
 .detail-options {
-    width: auto;
-    height: 26px;
+    inline-size: auto;
+    block-size: 26px;
     margin: 4px;
     border: 0px;
     border-radius: 3px;
@@ -67,8 +67,8 @@
 }
 
 .apply {
-    height: 100%;
-    width: 100%;
+    block-size: 100%;
+    inline-size: 100%;
     display: flex;
     flex-direction: row;
     padding: 13px 30px;
@@ -80,16 +80,16 @@
 }
 
 .info {
-    height: 225px;
-    width: 185px;
+    block-size: 225px;
+    inline-size: 185px;
     margin: 0px 20px 17px 0px;
     display: flex;
     flex-direction: column;
 }
 
 .info-image {
-    height: 185px;
-    width: 185px;
+    block-size: 185px;
+    inline-size: 185px;
     background-image: linear-gradient(#007bff85, #007bffc9);
     color: #ffffff;
     display: flex;
@@ -120,8 +120,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    height: 40px;
-    width: 100%;
+    block-size: 40px;
+    inline-size: 100%;
     background-color: #ffffff;
     border-radius: 0px 0px 8px 8px;
 }
@@ -132,8 +132,8 @@
 }
 
 .circle-button {
-    width: 19px; /* Adjust size */
-    height: 19px; /* Adjust size */
+    inline-size: 19px; /* Adjust size */
+    block-size: 19px; /* Adjust size */
     background-color: #0080ffbd;
     border-radius: 50%; /* Makes it circular */
     display: flex;
@@ -172,8 +172,8 @@
 }
 
 .setting-icons {
-    margin-right: 5px;
-    height: 20px;
+    margin-inline-end: 5px;
+    block-size: 20px;
     border-radius: 6px;
 }
 
@@ -242,6 +242,11 @@ ul.legal {
     margin: 16px 0;
     inline-size: 100%;
 }
+
+.hidden {
+    display: none;
+}
+
 
 /* Mac 1200px and 1919px */
 @media screen and (max-width: 1919px) {
