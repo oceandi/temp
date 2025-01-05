@@ -65,6 +65,27 @@ const formConfigs = {
         formId: 'fiberFormf100-12m',
         formType: 'fiber'
     },
+
+    f200mbps12m: {
+        buttonId: 'fiberButtonf200-12m',
+        popupId: 'fiberPopupf200-12m',
+        formId: 'fiberFormf200-12m',
+        formType: 'fiber'
+    },
+
+    f500mbps12m: {
+        buttonId: 'fiberButtonf500-12m',
+        popupId: 'fiberPopupf500-12m',
+        formId: 'fiberFormf500-12m',
+        formType: 'fiber'
+    },
+
+    f1000mbps12m: {
+        buttonId: 'fiberButtonf1000-12m',
+        popupId: 'fiberPopupf1000-12m',
+        formId: 'fiberFormf1000-12m',
+        formType: 'fiber'
+    },
     
 };
 

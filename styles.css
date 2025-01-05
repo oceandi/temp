@@ -298,4 +298,8 @@ ul.legal {
     .endofpage {
         font-size: 10px;
     }
+
+    .dashboard {
+        display: none;
+    }
 }
