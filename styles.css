@@ -32,6 +32,11 @@
     background-color: #f0f7ff;
 }
 
+.dashboard a{
+    color: #000;
+    text-decoration: none;
+}
+
 .packs {
     block-size: 100%;
     inline-size: 100%;
