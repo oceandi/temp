@@ -1,6 +1,4 @@
 .canvas{
-    inline-size: 100%;
-    block-size: 670px;
     background-color: azure;
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,7 +25,7 @@
 
 .dashboard {
     inline-size: 233px;
-    block-size: 100%;
+    block-size: auto;
     z-index: 9;
     border-style: solid;
     border-width: 0px 1px 0px 0px;
