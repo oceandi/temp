@@ -77,12 +77,12 @@
     padding: 13px 30px;
     flex-wrap: wrap;
     align-content: flex-start;
+    gap: 20px;
 }
 
 .info {
     block-size: 225px;
     inline-size: 185px;
-    margin: 0px 20px 17px 0px;
     display: flex;
     flex-direction: column;
 }
