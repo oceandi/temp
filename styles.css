@@ -300,4 +300,8 @@ ul.legal {
     .dashboard {
         display: none;
     }
+
+    .apply {
+        gap: 10px;
+    }
 }
