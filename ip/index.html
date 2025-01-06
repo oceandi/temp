@@ -19,20 +19,20 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-inline-size: 1200px;
             margin: 0 auto;
             padding: 40px 20px;
         }
 
         .header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-block-end: 40px;
         }
 
         .header h1 {
             font-size: 48px;
             font-weight: 600;
-            margin-bottom: 10px;
+            margin-block-end: 10px;
             background: linear-gradient(135deg, #007AFF, #5856D6);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -48,13 +48,13 @@
             backdrop-filter: blur(20px);
             border-radius: 18px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 30px;
+            margin-block-end: 30px;
         }
 
         .ip-info-table {
-            width: 100%;
+            inline-size: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            margin-block-start: 20px;
             background: white;
             border-radius: 12px;
             overflow: hidden;
@@ -63,8 +63,8 @@
         .ip-info-table th,
         .ip-info-table td {
             padding: 15px 20px;
-            text-align: left;
-            border-bottom: 1px solid #f0f0f0;
+            text-align: start;
+            border-block-end: 1px solid #f0f0f0;
         }
 
         .ip-info-table th {
@@ -74,7 +74,7 @@
         }
 
         .ip-info-table tr:last-child td {
-            border-bottom: none;
+            border-block-end: none;
         }
 
         .ip-info-table tr:hover {
@@ -83,7 +83,7 @@
 
         .analyze-button {
             display: block;
-            width: 200px;
+            inline-size: 200px;
             margin: 30px auto;
             padding: 16px 32px;
             font-size: 18px;
@@ -104,7 +104,7 @@
             transform: scale(0.95);
         }
 
-        @media (max-width: 768px) {
+        @media (max-inline-size: 768px) {
             .header h1 {
                 font-size: 36px;
             }

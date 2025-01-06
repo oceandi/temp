@@ -86,7 +86,52 @@ const formConfigs = {
         formId: 'fiberFormf1000-12m',
         formType: 'fiber'
     },
+
+
+
     
+    f25mbpsThsz: {
+        buttonId: 'fiberButtonf25-t',
+        popupId: 'fiberPopupf25-t',
+        formId: 'fiberFormf25-t',
+        formType: 'fiber'
+    },
+
+    f50mbpsThsz: {
+        buttonId: 'fiberButtonf50-t',
+        popupId: 'fiberPopupf50-t',
+        formId: 'fiberFormf50-t',
+        formType: 'fiber'
+    },
+
+    f100mbpsThsz: {
+        buttonId: 'fiberButtonf100-t',
+        popupId: 'fiberPopupf100-t',
+        formId: 'fiberFormf100-t',
+        formType: 'fiber'
+    },
+
+    f200mbpsThsz: {
+        buttonId: 'fiberButtonf200-t',
+        popupId: 'fiberPopupf200-t',
+        formId: 'fiberFormf200-t',
+        formType: 'fiber'
+    },
+
+    f500mbpsThsz: {
+        buttonId: 'fiberButtonf500-t',
+        popupId: 'fiberPopupf500-t',
+        formId: 'fiberFormf500-t',
+        formType: 'fiber'
+    },
+
+    f1000mbpsThsz: {
+        buttonId: 'fiberButtonf1000-t',
+        popupId: 'fiberPopupf1000-t',
+        formId: 'fiberFormf1000-t',
+        formType: 'fiber'
+    },
+
 };
 
 // Form işleyici sınıfı
