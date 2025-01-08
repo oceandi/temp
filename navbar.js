@@ -10,8 +10,6 @@ function createNavbar() {
                     <li><a href="offer/vdsl/index.html" draggable="false">VDSL</a></li>
                     <li><a href="offer/superbox/index.html" draggable="false">SuperBox</a></li>
                     <li><a href="offer/tv-plus/index.html" draggable="false">TV+</a></li>
-                    <li><a href="offer/game-plus/index.html" draggable="false">Game+</a></li>
-                    <li><a href="offer/servisler/index.html" draggable="false">Servisler</a></li>
                     <li><a href="offer/aksesuarlar/index.html" draggable="false">Aksesuarlar</a></li>
                     <li><a href="offer/destek/index.html" draggable="false">Destek</a></li>
                 </ul>

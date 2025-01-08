@@ -89,6 +89,52 @@ const formConfigs = {
 
 
 
+
+    f25mbps24mDevice: {
+        buttonId: 'fiberButtonf25-24m-device',
+        popupId: 'fiberPopupf25-24m-device',
+        formId: 'fiberFormf25-24m-device',
+        formType: 'fiber'
+    },
+
+    f50mbps24mDevice: {
+        buttonId: 'fiberButtonf50-24m-device',
+        popupId: 'fiberPopupf50-24m-device',
+        formId: 'fiberFormf50-24m-device',
+        formType: 'fiber'
+    },
+
+    f100mbps24mDevice: {
+        buttonId: 'fiberButtonf100-24m-device',
+        popupId: 'fiberPopupf100-24m-device',
+        formId: 'fiberFormf100-24m-device',
+        formType: 'fiber'
+    },
+
+    f200mbps24mDevice: {
+        buttonId: 'fiberButtonf200-24m-device',
+        popupId: 'fiberPopupf200-24m-device',
+        formId: 'fiberFormf200-24m-device',
+        formType: 'fiber'
+    },
+
+    f500mbps24mDevice: {
+        buttonId: 'fiberButtonf500-24m-device',
+        popupId: 'fiberPopupf500-24m-device',
+        formId: 'fiberFormf500-24m-device',
+        formType: 'fiber'
+    },
+
+    f1000mbps24mDevice: {
+        buttonId: 'fiberButtonf1000-24m-device',
+        popupId: 'fiberPopupf1000-24m-device',
+        formId: 'fiberFormf1000-24m-device',
+        formType: 'fiber'
+    },
+
+
+
+
     
     f25mbpsThsz: {
         buttonId: 'fiberButtonf25-t',

@@ -179,6 +179,23 @@
     border-radius: 6px;
 }
 
+.info-image-accessories {
+    height: 50px;
+    width: auto;
+    margin: 5px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.row p{
+    font-size: 10px;
+    margin: 5px;
+}
+
 @font-face {
     font-family: 'SF-Pro';
     src: url('/fonts/SF-Pro.woff2') format('woff2');
