@@ -191,9 +191,9 @@
     align-items: center;
 }
 
-.row p{
-    font-size: 10px;
-    margin: 5px;
+.tvlogo {
+    width: 38px;
+    margin: 12px 4px 12px 4px;
 }
 
 @font-face {

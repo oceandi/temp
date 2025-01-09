@@ -89,7 +89,6 @@ const formConfigs = {
 
 
 
-
     f25mbps24mDevice: {
         buttonId: 'fiberButtonf25-24m-device',
         popupId: 'fiberPopupf25-24m-device',
@@ -131,8 +130,6 @@ const formConfigs = {
         formId: 'fiberFormf1000-24m-device',
         formType: 'fiber'
     },
-
-
 
 
     
@@ -178,6 +175,49 @@ const formConfigs = {
         formType: 'fiber'
     },
 
+
+    
+    f25mbps12mtv: {
+        buttonId: 'fiberButtonf25-12m-tv',
+        popupId: 'fiberPopupf25-12m-tv',
+        formId: 'fiberFormf25-12m-tv',
+        formType: 'fiber'
+    },
+
+    f50mbps12mtv: {
+        buttonId: 'fiberButtonf50-12m-tv',
+        popupId: 'fiberPopupf50-12m-tv',
+        formId: 'fiberFormf50-12m-tv',
+        formType: 'fiber'
+    },
+
+    f100mbps12mtv: {
+        buttonId: 'fiberButtonf100-12m-tv',
+        popupId: 'fiberPopupf100-12m-tv',
+        formId: 'fiberFormf100-12m-tv',
+        formType: 'fiber'
+    },
+
+    f200mbps12mtv: {
+        buttonId: 'fiberButtonf200-12m-tv',
+        popupId: 'fiberPopupf200-12m-tv',
+        formId: 'fiberFormf200-12m-tv',
+        formType: 'fiber'
+    },
+
+    f500mbps12mtv: {
+        buttonId: 'fiberButtonf500-12m-tv',
+        popupId: 'fiberPopupf500-12m-tv',
+        formId: 'fiberFormf500-12m-tv',
+        formType: 'fiber'
+    },
+
+    f1000mbps12mtv: {
+        buttonId: 'fiberButtonf1000-12m-tv',
+        popupId: 'fiberPopupf1000-12m-tv',
+        formId: 'fiberFormf1000-12m-tv',
+        formType: 'fiber'
+    },
 };
 
 // Form işleyici sınıfı
