@@ -1,17 +1,17 @@
 function createNavbar() {
     const navbarHTML = `
         <nav class="navbar">
-            <a class="noact" href="index.html">
+            <a class="noact" href="/">
                 <img class="navlogo" src="https://raw.githubusercontent.com/oceandi/links/refs/heads/main/ISP/images/homepage/sol.png">
             </a>
             <div class="nwa">
                 <ul class="nav-menu">
-                    <li><a href="offer/fiber-internet/index.html" draggable="false">Fiber</a></li>
-                    <li><a href="offer/vdsl/index.html" draggable="false">VDSL</a></li>
-                    <li><a href="offer/superbox/index.html" draggable="false">SuperBox</a></li>
-                    <li><a href="offer/tv-plus/index.html" draggable="false">TV+</a></li>
-                    <li><a href="offer/aksesuarlar/index.html" draggable="false">Aksesuarlar</a></li>
-                    <li><a href="offer/destek/index.html" draggable="false">Destek</a></li>
+                    <li><a href="/offer/fiber-internet" draggable="false">Fiber</a></li>
+                    <li><a href="/offer/vdsl" draggable="false">VDSL</a></li>
+                    <li><a href="/offer/superbox" draggable="false">SuperBox</a></li>
+                    <li><a href="/offer/tv-plus" draggable="false">TV+</a></li>
+                    <li><a href="/offer/aksesuarlar" draggable="false">Aksesuarlar</a></li>
+                    <li><a href="/offer/destek" draggable="false">Destek</a></li>
                 </ul>
             </div>
             <div class="hamburger" onclick="toggleMenu()">

@@ -1,17 +1,16 @@
-.canvas{
+@font-face {
+    font-family: 'SF-Pro';
+    src: url('/fonts/SF-Pro.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.desktop{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     flex-direction: column;
-}
-
-.navbar {
-    block-size: 44px;
-    inline-size: 100%;
-    background-color: #0000004a;
-    position: relative;
-    z-index: 10;
 }
 
 .content {
@@ -47,7 +46,7 @@
 .detail {
     display: flex;
     flex-direction: row;
-    block-size: 62px;
+    block-size: 106px;
     inline-size: 100%;
     justify-content: center;
     align-items: flex-end;
@@ -133,6 +132,17 @@
     font-size: 12px;
 }
 
+
+.info-button {
+    background: none;
+    border: none;
+    inline-size: 185px;
+    cursor: pointer;
+    text-align: start;
+    padding: 0;
+    margin: 0;
+}
+
 .circle-button {
     inline-size: 19px; /* Adjust size */
     block-size: 19px; /* Adjust size */
@@ -180,8 +190,8 @@
 }
 
 .info-image-accessories {
-    height: 50px;
-    width: auto;
+    block-size: 50px;
+    inline-size: auto;
     margin: 5px;
 }
 
@@ -192,17 +202,9 @@
 }
 
 .tvlogo {
-    width: 38px;
+    inline-size: 38px;
     margin: 12px 4px 12px 4px;
 }
-
-@font-face {
-    font-family: 'SF-Pro';
-    src: url('/fonts/SF-Pro.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
 
 html, body {
     margin: 0;
@@ -210,56 +212,6 @@ html, body {
     scroll-behavior: smooth;
     font-family: "SF-Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
     user-select: none;
-}
-
-.five {
-    block-size: fit-content;
-    inline-size: 100%;
-    background-color: #f5f5f7;
-    display: flex;
-    flex-direction: row;
-}
-
-.endofpage {
-    color: #0000008f;
-    font-size: 12px;
-    margin: 15px 15px 15px 100px;
-}
-
-ul.legal {
-    display: flex;
-    flex-direction: row;
-    padding: 0px;
-    list-style: none;
-}
-
-.legalli{
-    margin: 0px 20px 0px 0px;
-}
-
-.five .endofpage a {
-    text-decoration: none; /* Alt çizgiyi kaldırır */
-    color: inherit; /* Renk değişikliğini önler */
-    background-color: #f5f5f7;
-}
-
-.five .endofpage a:hover,
-.five .endofpage a:focus,
-.five .endofpage a:active {
-    text-decoration: none;
-    color: #06c;
-    background-color: #f5f5f7;
-}
-
-.underline {
-    text-decoration: underline !important;
-    color: #06c !important;
-}
-
-.divider {
-    border-block-start: 1px solid #0000008f;
-    margin: 16px 0;
-    inline-size: 100%;
 }
 
 .hidden {
@@ -271,13 +223,6 @@ ul.legal {
 @media screen and (max-width: 1919px) {
     .desktop {
         inline-size: 100%;
-    }
-}
-
-/* Macbook 768px and 1199px */
-@media screen and (max-width: 1199px) {
-    .endofpage {
-        margin: 15px 15px 15px 15px;
     }
 }
 
@@ -312,10 +257,6 @@ ul.legal {
         border-block-end-width: 6px;
         border-inline-start-width: 0px;
         border-inline-end-width: 0px;
-    }
-
-    .endofpage {
-        font-size: 10px;
     }
 
     .dashboard {

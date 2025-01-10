@@ -2,7 +2,7 @@
   background-color: #fafafccc;
   backdrop-filter: saturate(180%) blur(20px);
   padding: 10px 20px;
-  position: relative;
+  position: fixed;
   inset-block-start: 0;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
