@@ -45,46 +45,46 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Form yapılandırmaları
 const formConfigs = {
-    f25mbps12m: {
-        buttonId: 'fiberButtonf25-12m',
-        popupId: 'fiberPopupf25-12m',
-        formId: 'fiberFormf25-12m',
-        formType: 'fiber'
+    d8mbps12m: {
+        buttonId: 'dslButtond8-12m',
+        popupId: 'dslPopupd8-12m',
+        formId: 'dslFormd8-12m',
+        formType: 'dsl'
     },
 
-    f50mbps12m: {
-        buttonId: 'fiberButtonf50-12m',
-        popupId: 'fiberPopupf50-12m',
-        formId: 'fiberFormf50-12m',
-        formType: 'fiber'
+    d16mbps12m: {
+        buttonId: 'dslButtond16-12m',
+        popupId: 'dslPopupd16-12m',
+        formId: 'dslFormd16-12m',
+        formType: 'dsl'
     },
 
-    f100mbps12m: {
-        buttonId: 'fiberButtonf100-12m',
-        popupId: 'fiberPopupf100-12m',
-        formId: 'fiberFormf100-12m',
-        formType: 'fiber'
+    d24mbps12m: {
+        buttonId: 'dslButtond24-12m',
+        popupId: 'dslPopupd24-12m',
+        formId: 'dslFormd24-12m',
+        formType: 'dsl'
     },
 
-    f200mbps12m: {
-        buttonId: 'fiberButtonf200-12m',
-        popupId: 'fiberPopupf200-12m',
-        formId: 'fiberFormf200-12m',
-        formType: 'fiber'
+    d35mbps12m: {
+        buttonId: 'dslButtond35-12m',
+        popupId: 'dslPopupd35-12m',
+        formId: 'dslFormd35-12m',
+        formType: 'dsl'
     },
 
-    f500mbps12m: {
-        buttonId: 'fiberButtonf500-12m',
-        popupId: 'fiberPopupf500-12m',
-        formId: 'fiberFormf500-12m',
-        formType: 'fiber'
+    d50mbps12m: {
+        buttonId: 'dslButtond50-12m',
+        popupId: 'dslPopupd50-12m',
+        formId: 'dslFormd50-12m',
+        formType: 'dsl'
     },
 
-    f1000mbps12m: {
-        buttonId: 'fiberButtonf1000-12m',
-        popupId: 'fiberPopupf1000-12m',
-        formId: 'fiberFormf1000-12m',
-        formType: 'fiber'
+    d100mbps12m: {
+        buttonId: 'dslButtond100-12m',
+        popupId: 'dslPopupd100-12m',
+        formId: 'dslFormd100-12m',
+        formType: 'dsl'
     },
 
 
