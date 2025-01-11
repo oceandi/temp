@@ -128,90 +128,77 @@ const formConfigs = {
 
 
     
-    f25mbpsThsz: {
-        buttonId: 'fiberButtonf25-t',
-        popupId: 'fiberPopupf25-t',
-        formId: 'fiberFormf25-t',
-        formType: 'fiber'
+    d16mbpsThsz: {
+        buttonId: 'dslButtond16-t',
+        popupId: 'dslPopupd16-t',
+        formId: 'dslFormd16-t',
+        formType: 'dsl'
     },
 
-    f50mbpsThsz: {
-        buttonId: 'fiberButtonf50-t',
-        popupId: 'fiberPopupf50-t',
-        formId: 'fiberFormf50-t',
-        formType: 'fiber'
+    d24mbpsThsz: {
+        buttonId: 'dslButtond24-t',
+        popupId: 'dslPopupd24-t',
+        formId: 'dslFormd24-t',
+        formType: 'dsl'
     },
 
-    f100mbpsThsz: {
-        buttonId: 'fiberButtonf100-t',
-        popupId: 'fiberPopupf100-t',
-        formId: 'fiberFormf100-t',
-        formType: 'fiber'
+    d35mbpsThsz: {
+        buttonId: 'dslButtond35-t',
+        popupId: 'dslPopupd35-t',
+        formId: 'dslFormd35-t',
+        formType: 'dsl'
     },
 
-    f200mbpsThsz: {
-        buttonId: 'fiberButtonf200-t',
-        popupId: 'fiberPopupf200-t',
-        formId: 'fiberFormf200-t',
-        formType: 'fiber'
+    d50mbpsThsz: {
+        buttonId: 'dslButtond50-t',
+        popupId: 'dslPopupd50-t',
+        formId: 'dslFormd50-t',
+        formType: 'dsl'
     },
 
-    f500mbpsThsz: {
-        buttonId: 'fiberButtonf500-t',
-        popupId: 'fiberPopupf500-t',
-        formId: 'fiberFormf500-t',
-        formType: 'fiber'
-    },
-
-    f1000mbpsThsz: {
-        buttonId: 'fiberButtonf1000-t',
-        popupId: 'fiberPopupf1000-t',
-        formId: 'fiberFormf1000-t',
-        formType: 'fiber'
-    },
 
 
     
-    f25mbps12mtv: {
-        buttonId: 'fiberButtonf25-12m-tv',
-        popupId: 'fiberPopupf25-12m-tv',
-        formId: 'fiberFormf25-12m-tv',
-        formType: 'fiber'
+    d8mbps12mtv: {
+        buttonId: 'dslButtond8-12m-tv',
+        popupId: 'dslPopupd8-12m-tv',
+        formId: 'dslFormd8-12m-tv',
+        formType: 'dsl'
     },
 
-    f50mbps12mtv: {
-        buttonId: 'fiberButtonf50-12m-tv',
-        popupId: 'fiberPopupf50-12m-tv',
-        formId: 'fiberFormf50-12m-tv',
-        formType: 'fiber'
+    d16mbps12m: {
+        buttonId: 'dslButtond16-12m-tv',
+        popupId: 'dslPopupd16-12m-tv',
+        formId: 'dslFormd16-12m-tv',
+        formType: 'dsl'
     },
 
-    f100mbps12mtv: {
-        buttonId: 'fiberButtonf100-12m-tv',
-        popupId: 'fiberPopupf100-12m-tv',
-        formId: 'fiberFormf100-12m-tv',
-        formType: 'fiber'
+    d24mbps12m: {
+        buttonId: 'dslButtond24-12m-tv',
+        popupId: 'dslPopupd24-12m-tv',
+        formId: 'dslFormd24-12m-tv',
+        formType: 'dsl'
     },
 
-    f200mbps12mtv: {
-        buttonId: 'fiberButtonf200-12m-tv',
-        popupId: 'fiberPopupf200-12m-tv',
-        formId: 'fiberFormf200-12m-tv',
-        formType: 'fiber'
+    d35mbps12m: {
+        buttonId: 'dslButtond35-12m-tv',
+        popupId: 'dslPopupd35-12m-tv',
+        formId: 'dslFormd35-12m-tv',
+        formType: 'dsl'
     },
 
-    f500mbps12mtv: {
-        buttonId: 'fiberButtonf500-12m-tv',
-        popupId: 'fiberPopupf500-12m-tv',
-        formId: 'fiberFormf500-12m-tv',
-        formType: 'fiber'
+    d50mbps12m: {
+        buttonId: 'dslButtond50-12m-tv',
+        popupId: 'dslPopupd50-12m-tv',
+        formId: 'dslFormd50-12m-tv',
+        formType: 'dsl'
     },
 
-    f1000mbps12mtv: {
-        buttonId: 'fiberButtonf1000-12m-tv',
-        popupId: 'fiberPopupf1000-12m-tv',
-        formId: 'fiberFormf1000-12m-tv',
-        formType: 'fiber'
+    d100mbps12m: {
+        buttonId: 'dslButtond100-12m-tv',
+        popupId: 'dslPopupd100-12m-tv',
+        formId: 'dslFormd100-12m-tv',
+        formType: 'dsl'
     },
 };
 
