@@ -89,47 +89,42 @@ const formConfigs = {
 
 
 
-    f25mbps24mDevice: {
-        buttonId: 'fiberButtonf25-24m-device',
-        popupId: 'fiberPopupf25-24m-device',
-        formId: 'fiberFormf25-24m-device',
-        formType: 'fiber'
+
+    d16mbps24mDevice: {
+        buttonId: 'dslButtond16-24m-device',
+        popupId: 'dslPopupd16-24m-device',
+        formId: 'dslFormd16-24m-device',
+        formType: 'dsl'
     },
 
-    f50mbps24mDevice: {
-        buttonId: 'fiberButtonf50-24m-device',
-        popupId: 'fiberPopupf50-24m-device',
-        formId: 'fiberFormf50-24m-device',
-        formType: 'fiber'
+    d24mbps12mDevice: {
+        buttonId: 'dslButtond24-24m-device',
+        popupId: 'dslPopupd24-24m-device',
+        formId: 'dslFormd24-24m-device',
+        formType: 'dsl'
     },
 
-    f100mbps24mDevice: {
-        buttonId: 'fiberButtonf100-24m-device',
-        popupId: 'fiberPopupf100-24m-device',
-        formId: 'fiberFormf100-24m-device',
-        formType: 'fiber'
+    d35mbps12mDevice: {
+        buttonId: 'dslButtond35-24m-device',
+        popupId: 'dslPopupd35-24m-device',
+        formId: 'dslFormd35-24m-device',
+        formType: 'dsl'
     },
 
-    f200mbps24mDevice: {
-        buttonId: 'fiberButtonf200-24m-device',
-        popupId: 'fiberPopupf200-24m-device',
-        formId: 'fiberFormf200-24m-device',
-        formType: 'fiber'
+    d50mbps12mDevice: {
+        buttonId: 'dslButtond50-24m-device',
+        popupId: 'dslPopupd50-24m-device',
+        formId: 'dslFormd50-24m-device',
+        formType: 'dsl'
     },
 
-    f500mbps24mDevice: {
-        buttonId: 'fiberButtonf500-24m-device',
-        popupId: 'fiberPopupf500-24m-device',
-        formId: 'fiberFormf500-24m-device',
-        formType: 'fiber'
+    d100mbps12mDevice: {
+        buttonId: 'dslButtond100-24m-device',
+        popupId: 'dslPopupd100-24m-device',
+        formId: 'dslFormd100-24m-device',
+        formType: 'dsl'
     },
 
-    f1000mbps24mDevice: {
-        buttonId: 'fiberButtonf1000-24m-device',
-        popupId: 'fiberPopupf1000-24m-device',
-        formId: 'fiberFormf1000-24m-device',
-        formType: 'fiber'
-    },
 
 
     
