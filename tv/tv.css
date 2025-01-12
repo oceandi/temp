@@ -19,6 +19,13 @@
     font-size: 14px;
 }
 
+.button-base {
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
 .badge.online { background: #00b3e3; }
 .badge.fiber { background: #ff6b00; }
 

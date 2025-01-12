@@ -7,10 +7,10 @@ const speeds = [
     { type: 'fiber', speed: 500, price: 700, upload: 50, initialPrice: 963.99 },
     { type: 'fiber', speed: 1000, price: 800, upload: 50, initialPrice: 1063.99 },
     // VDSL hızları
-    { type: 'vdsl', speed: 16, price: 520, upload: 2, initialPrice: 763.99 },
-    { type: 'vdsl', speed: 24, price: 540, upload: 3, initialPrice: 783.99 },
-    { type: 'vdsl', speed: 35, price: 560, upload: 4, initialPrice: 803.99 },
-    { type: 'vdsl', speed: 50, price: 580, upload: 5, initialPrice: 823.99 }
+    { type: 'vdsl', speed: 24, price: 640, upload: 12, initialPrice: 878.99 },
+    { type: 'vdsl', speed: 35, price: 650, upload: 12, initialPrice: 888.99 },
+    { type: 'vdsl', speed: 50, price: 660, upload: 15, initialPrice: 898.99 },
+    { type: 'vdsl', speed: 100, price: 710, upload: 20, initialPrice: 948.99 }
 ];
 
 document.addEventListener('DOMContentLoaded', function() {
