@@ -1,0 +1,57 @@
+<doctype html>
+<html>
+    <head>
+        <title>TV+ Kampanyası</title>
+        <meta  charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="tv.css">
+    </head>
+    <body>
+        <div class="package-selector">
+            <div class="package-header">
+                <span class="badge online">Online'a Özel</span>
+                <span class="badge fiber">Fiber İnternet</span>
+            </div>
+            
+            <h2>Online'a Özel TV+ Kampanyası</h2>
+            
+            <div class="speed-dropdown">
+                <button id="speedButton" class="dropdown-toggle">
+                    <span id="selectedSpeed">25 Mbps İndirme Hızı</span>
+                    <svg class="chevron" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M6 9l6 6 6-6" stroke="currentColor" fill="none" stroke-width="2"/>
+                    </svg>
+                </button>
+                <div id="speedOptions" class="dropdown-menu hidden">
+                    <!-- Hız seçenekleri JavaScript ile doldurulacak -->
+                </div>
+            </div>
+        
+            <div class="commitment-options">
+                <button>12 Ay Taahhüt</button>
+                <button>Limitsiz</button>
+            </div>
+        
+            <div class="features">
+                <div class="feature-icon">TV+</div>
+                <div class="feature-icon">CL</div>
+                <div class="feature-icon">EL</div>
+                <div class="feature-icon">ECL</div>
+            </div>
+        
+            <div class="price-section">
+                <div class="price-info">
+                    <p class="promo">İlk 2 ay ücretsiz!</p>
+                    <p class="regular-price">Sonraki 10 ay <span id="monthlyPrice">570</span> TL/Ay</p>
+                </div>
+                <button class="action-button">İncele</button>
+            </div>
+        
+            <div class="additional-info">
+                <p>↑ <span id="uploadSpeed">10</span> Mbps Upload</p>
+                <p>Taahhütsüz Fiyat: <span id="noCommitmentPrice">330</span>₺ /Ay</p>
+            </div>
+        </div>
+        <script src="tv.js"></script>
+    </body>
+</html>
