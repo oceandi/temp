@@ -441,6 +441,28 @@ html, body {
     align-items: center;
 }
 
+.circle-button {
+    inline-size: 40px;
+    block-size: 40px;
+    background-color: #0080ff;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    padding: 0;
+}
+
+.circle-button span {
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1;
+    margin-top: -2px; /* Fine-tune vertical alignment */
+}
+
 .internet-type-buttons {
     display: flex;
     gap: 8px;
