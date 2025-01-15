@@ -14,7 +14,7 @@ function createNavbar() {
                     <li><a href="/offer/destek" draggable="false">Destek</a></li>
                 </ul>
             </div>
-            <div class="hamburger" onclick="toggleMenu()">
+            <div class="hamburger" onclick="toggleMenu()" role="button" tabindex="0">
                 <span></span>
                 <span></span>
             </div>

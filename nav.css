@@ -49,6 +49,13 @@
   display: none;
   flex-direction: column;
   cursor: pointer;
+  padding: 15px;  /* Dokunma alanını artırmak için padding eklendi */
+  margin: -5px;   /* Görsel pozisyonu korumak için negatif margin */
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-width: 44px; /* iOS için minimum dokunma alanı */
+  min-height: 44px;
 }
 
 .hamburger span {
@@ -98,7 +105,9 @@
 
   .hamburger {
     display: flex;
-    margin: 10px;
+    margin: 0;  /* Önceki margin'i kaldırıyoruz */
+    position: relative;
+    right: 10px; /* Sağdan boşluk */
   }
 
   .nav-menu a {
